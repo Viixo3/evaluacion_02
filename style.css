@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* --------------Header------------- */
+
+.fastfood, .fastfood__pide, .function__header, .function__suggestions, .testimonials, .restaurant__title, .restaurant__boddy, .moneyapp, .nosotros__content, .footer {
+    max-width: 800px;
+    margin: auto;
+    /* border: solid 1px black; */
+}
+
+.fastfood__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 30px auto;
+}
+
+.fastfood__img {
+    max-width: 200px;
+}
+
+.fastfood__href {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.href, .fastfood__button {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fastfood__button, .moneyapp__button {
+    background-color: #e8505b;
+    color: #ffffff;
+    padding: 7px 18px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/*-----------Encuentra y Pide-----------*/
+
+.fastfood__pide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px
+}
+
+.fastfood__boddy {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8505b;
+    color: #ffffff;
+}
+
+.fastfood__boddy__title {
+    text-align: center;
+    margin: 60px 10px;
+    padding: 0 30px;
+}
+
+.fastfood__boddy__label {
+    text-transform: uppercase;
+    margin: 5px 30px;
+    font-size: 12px;
+}
+
+.boddy__input {
+    border: none;
+    margin: 3px 30px;
+    padding: 8px 10px;
+    font-size: 10px;
+    color: #455a64;
+    font-weight: 100;
+}
+
+.fastfood__boddy__button {
+    background-color:  #455a64;
+    color: #ffffff;
+    margin: 15px 30px;
+    padding: 8px 0;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.boddy__img {
+    display: flex;
+    align-items: end;
+}
+
+/*-------- Como funciona -----------*/
+
+.function{
+    background-color: #e8505b;
+}
+
+.function__header__title {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.function__header__span {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.function__suggestions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* --------------testimonio------------------ */
+
+.testimonials__header {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.testimonials__content {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.testimonials__article__title {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 15px;
+}
+
+.test {
+    background-color:  #455a64;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 450px;
+}
+
+.testimonials__article__foto {
+    border-radius: 500px;
+    min-width: 40px;
+}
+
+.fotog {
+    min-width: 70px;
+}
+
+.article__name {
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 10px;
+    gap: 5px;
+}
+
+.testimonials__article__descrip {
+    font-size: 13.2px;
+    margin: 15px auto;
+    margin-left: 25px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.testimonials__article--1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    height: 400;
+}
+
+.testimonials__article--2 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.testimonials__article--3 {
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+.testimonials__article--4 {
+    grid-column: 5/6;
+    grid-row: 1/3;
+}
+
+.testimonials__article--5 {
+    grid-column: 4/5 ;
+    grid-row: 1/2;
+}
+
+/*---------------Restaurantes---------------*/
+
+.restaurant {
+    background-color: #eceeef;
+}
+
+.restaurant__title {
+    text-align: center;
+    color: #455a64;
+    padding: 30px;
+}
+
+.restaurant__boddy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.restaurant__article {
+    background-color: #ffffff;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding-left: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 2px rgb(221, 221, 221);
+    
+}
+
+.restaurant__article__logo {
+    width: 80px;
+}
+
+.restaurant__stars {
+    max-width: 110px;
+}
+
+.restaurant__article__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+}
+
+.restaurant__article__header {
+    width: 140px;
+}
+
+.restaurant__article__title {
+    color: #e8505b;
+    font-size: 15px;
+}
+
+.restaurant__article__descrip {
+    color: #455a64;
+    font-size: 11px;
+    line-height: 1.5;
+    padding-right: 12px;
+}
+
+/* ----------------Money------------------ */
+
+.moneyapp__header {
+    color: #455a64;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+}
+
+.moneyapp__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.moneyapp__boddy {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px auto;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    color: #455a64;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* ----------Nosotros------------- */
+
+.nosotros {
+    background-color:  #455a64;
+    color: #ffffff;
+}
+
+.nosotros__header {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nosotros__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.nosotros__article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 2;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* -------------pie de pagina--------------- */
+
+.footerpage {
+    background-color: #e8505b;;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media (max-width: 750px) {
+    .fastfood__pide, .testimonials__content, .restaurant__boddy, .moneyapp__content, .nosotros__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .boddy__img {
+        width: 200px;
+        margin: auto;
+    }
+
+    .restaurant__article, .test, .moneyapp__img, .nosotros__content, .fastfood__pide {
+        width: 400px;
+        margin: auto;
+    }
+}
