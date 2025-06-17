@@ -379,4 +379,20 @@ img {
         width: 110px;
         margin: auto;
     }
+
+    .fastfood__href {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    gap: 5px;
+    align-items: center;
+    }
+
+    .fastfood__button, .moneyapp__button {
+    background-color: #e8505b;
+    color: #ffffff;
+    padding: 5px 14px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    }
 }
