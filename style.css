@@ -89,7 +89,7 @@ img {
     padding: 0 30px;
 }
 
-.fastfood__boddy__label {
+.text {
     text-transform: uppercase;
     margin: 5px 30px;
     font-size: 12px;
@@ -364,13 +364,19 @@ img {
         display: flex;
         flex-direction: column;
     }
+
     .boddy__img {
-        width: 200px;
+        width: 250px;
         margin: auto;
     }
 
     .restaurant__article, .test, .moneyapp__img, .nosotros__content, .fastfood__pide {
-        width: 400px;
+        width: 350px;
+        margin: auto;
+    }
+
+    .fastfood__img {
+        width: 110px;
         margin: auto;
     }
 }
